@@ -29,6 +29,7 @@
           <ul class="nav__links" role="list">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="checklist.html">Safety Check</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -46,6 +47,7 @@
       <div id="mobile-menu" class="nav__mobile" aria-hidden="true">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
+        <a href="checklist.html">Safety Check</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         <a href="tel:8602428081" class="nav__mobile-phone">&phone; (860) 242-8081</a>
@@ -222,146 +224,44 @@
       </div>
     </section>
 
-    <!-- ====== SAFETY CHECKLIST ====== -->
-    <section class="section checklist-section" aria-labelledby="checklist-heading">
+    <!-- ====== SAFETY CHECKLIST TEASER ====== -->
+    <section class="section section--cream-dark" aria-labelledby="checklist-teaser-heading">
       <div class="container">
-        <header class="section-header section-header--center">
-          <span class="section-label">Free Self-Assessment</span>
-          <span class="brass-rule brass-rule--center" aria-hidden="true"></span>
-          <h2 id="checklist-heading">Is Your Home&rsquo;s Electrical System Safe?</h2>
-          <p>Answer 10 quick yes/no questions to assess your home&rsquo;s electrical risk level. Most homeowners are surprised by what they find.</p>
-        </header>
-
-        <div class="checklist-widget" role="region" aria-labelledby="checklist-heading">
-          <div class="checklist-header">
-            <h3>Home Electrical Safety Checklist</h3>
-            <p>Answer honestly. &ldquo;Yes&rdquo; answers indicate potential risk factors.</p>
-          </div>
-
-          <div class="checklist-progress" aria-live="polite" aria-atomic="true">
-            <span class="checklist-progress__label">0 of 10 answered</span>
-            <div class="checklist-progress__bar" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0">
-              <div class="checklist-progress__fill"></div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center; max-width:900px; margin:0 auto;">
+          <div>
+            <span class="section-label">Free Self-Assessment</span>
+            <span class="brass-rule" aria-hidden="true"></span>
+            <h2 id="checklist-teaser-heading" style="font-size:clamp(1.4rem,3vw,2rem);">Is Your Home&rsquo;s Electrical System Safe?</h2>
+            <p style="margin-top:1rem; color:var(--text-mid); font-size:1rem; line-height:1.7; max-width:none;">
+              Answer 10 yes/no questions about your home and we&rsquo;ll score your electrical risk level and tell you what to do next. Takes about two minutes.
+            </p>
+            <div style="margin-top:1.75rem;">
+              <a href="checklist.html" class="btn btn--primary btn--lg">Take the Safety Check</a>
             </div>
           </div>
-
-          <div role="list">
-
-            <div class="checklist-question" role="listitem">
-              <span class="checklist-question__num" aria-hidden="true">1</span>
-              <span class="checklist-question__text" id="q1">My home was built before 1980.</span>
-              <div class="checklist-question__btns" role="group" aria-labelledby="q1">
-                <button class="checklist-btn yes" aria-pressed="false">YES</button>
-                <button class="checklist-btn no"  aria-pressed="false">NO</button>
-              </div>
-              <span class="checklist-question__status" aria-live="polite"></span>
-            </div>
-
-            <div class="checklist-question" role="listitem">
-              <span class="checklist-question__num" aria-hidden="true">2</span>
-              <span class="checklist-question__text" id="q2">I have a fuse box, not a circuit breaker panel.</span>
-              <div class="checklist-question__btns" role="group" aria-labelledby="q2">
-                <button class="checklist-btn yes" aria-pressed="false">YES</button>
-                <button class="checklist-btn no"  aria-pressed="false">NO</button>
-              </div>
-              <span class="checklist-question__status" aria-live="polite"></span>
-            </div>
-
-            <div class="checklist-question" role="listitem">
-              <span class="checklist-question__num" aria-hidden="true">3</span>
-              <span class="checklist-question__text" id="q3">I use extension cords as permanent wiring in some rooms.</span>
-              <div class="checklist-question__btns" role="group" aria-labelledby="q3">
-                <button class="checklist-btn yes" aria-pressed="false">YES</button>
-                <button class="checklist-btn no"  aria-pressed="false">NO</button>
-              </div>
-              <span class="checklist-question__status" aria-live="polite"></span>
-            </div>
-
-            <div class="checklist-question" role="listitem">
-              <span class="checklist-question__num" aria-hidden="true">4</span>
-              <span class="checklist-question__text" id="q4">Outlets near my sinks or bathrooms do not have GFCI protection.</span>
-              <div class="checklist-question__btns" role="group" aria-labelledby="q4">
-                <button class="checklist-btn yes" aria-pressed="false">YES</button>
-                <button class="checklist-btn no"  aria-pressed="false">NO</button>
-              </div>
-              <span class="checklist-question__status" aria-live="polite"></span>
-            </div>
-
-            <div class="checklist-question" role="listitem">
-              <span class="checklist-question__num" aria-hidden="true">5</span>
-              <span class="checklist-question__text" id="q5">My circuits trip or blow fuses more than once a month.</span>
-              <div class="checklist-question__btns" role="group" aria-labelledby="q5">
-                <button class="checklist-btn yes" aria-pressed="false">YES</button>
-                <button class="checklist-btn no"  aria-pressed="false">NO</button>
-              </div>
-              <span class="checklist-question__status" aria-live="polite"></span>
-            </div>
-
-            <div class="checklist-question" role="listitem">
-              <span class="checklist-question__num" aria-hidden="true">6</span>
-              <span class="checklist-question__text" id="q6">I have two-prong (ungrounded) outlets in my home.</span>
-              <div class="checklist-question__btns" role="group" aria-labelledby="q6">
-                <button class="checklist-btn yes" aria-pressed="false">YES</button>
-                <button class="checklist-btn no"  aria-pressed="false">NO</button>
-              </div>
-              <span class="checklist-question__status" aria-live="polite"></span>
-            </div>
-
-            <div class="checklist-question" role="listitem">
-              <span class="checklist-question__num" aria-hidden="true">7</span>
-              <span class="checklist-question__text" id="q7">My lights flicker or dim regularly.</span>
-              <div class="checklist-question__btns" role="group" aria-labelledby="q7">
-                <button class="checklist-btn yes" aria-pressed="false">YES</button>
-                <button class="checklist-btn no"  aria-pressed="false">NO</button>
-              </div>
-              <span class="checklist-question__status" aria-live="polite"></span>
-            </div>
-
-            <div class="checklist-question" role="listitem">
-              <span class="checklist-question__num" aria-hidden="true">8</span>
-              <span class="checklist-question__text" id="q8">I&rsquo;ve noticed outlets or switches that feel warm to the touch.</span>
-              <div class="checklist-question__btns" role="group" aria-labelledby="q8">
-                <button class="checklist-btn yes" aria-pressed="false">YES</button>
-                <button class="checklist-btn no"  aria-pressed="false">NO</button>
-              </div>
-              <span class="checklist-question__status" aria-live="polite"></span>
-            </div>
-
-            <div class="checklist-question" role="listitem">
-              <span class="checklist-question__num" aria-hidden="true">9</span>
-              <span class="checklist-question__text" id="q9">I don&rsquo;t have interconnected smoke detectors on every floor.</span>
-              <div class="checklist-question__btns" role="group" aria-labelledby="q9">
-                <button class="checklist-btn yes" aria-pressed="false">YES</button>
-                <button class="checklist-btn no"  aria-pressed="false">NO</button>
-              </div>
-              <span class="checklist-question__status" aria-live="polite"></span>
-            </div>
-
-            <div class="checklist-question" role="listitem">
-              <span class="checklist-question__num" aria-hidden="true">10</span>
-              <span class="checklist-question__text" id="q10">My home has never had a professional electrical inspection.</span>
-              <div class="checklist-question__btns" role="group" aria-labelledby="q10">
-                <button class="checklist-btn yes" aria-pressed="false">YES</button>
-                <button class="checklist-btn no"  aria-pressed="false">NO</button>
-              </div>
-              <span class="checklist-question__status" aria-live="polite"></span>
-            </div>
-
-          </div><!-- /list -->
-
-          <!-- Result (shown by JS) -->
-          <div class="checklist-result" aria-live="polite" aria-atomic="true" role="status">
-            <div class="checklist-result__score"></div>
-            <div class="checklist-result__label"></div>
-            <p class="checklist-result__text"></p>
-            <div class="checklist-result__actions">
-              <a href="contact.html" class="btn btn--primary">Schedule an Inspection</a>
-              <a href="tel:8602428081" class="btn btn--brass js-call-btn" style="display:none;">Call Now: (860) 242-8081</a>
-              <button class="btn btn--outline js-retake">Retake Checklist</button>
-            </div>
-          </div>
-
-        </div><!-- /checklist-widget -->
+          <ul style="display:flex; flex-direction:column; gap:0.75rem;" aria-label="Checklist topics">
+            <li style="display:flex; align-items:center; gap:0.75rem; font-size:0.9375rem; color:var(--text-mid);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brass)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Panel and fuse box age
+            </li>
+            <li style="display:flex; align-items:center; gap:0.75rem; font-size:0.9375rem; color:var(--text-mid);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brass)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              GFCI and grounding status
+            </li>
+            <li style="display:flex; align-items:center; gap:0.75rem; font-size:0.9375rem; color:var(--text-mid);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brass)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Overloaded circuits and flickering
+            </li>
+            <li style="display:flex; align-items:center; gap:0.75rem; font-size:0.9375rem; color:var(--text-mid);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brass)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Smoke detector coverage
+            </li>
+            <li style="display:flex; align-items:center; gap:0.75rem; font-size:0.9375rem; color:var(--text-mid);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brass)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Warm outlets and inspection history
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -395,6 +295,7 @@
           <ul class="footer__links" role="list">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="checklist.html">Safety Check</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>

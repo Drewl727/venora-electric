@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free home electrical safety checklist from Venora Electric Inc. Answer 10 questions to assess your home's electrical risk level. Serving Bloomfield, West Hartford, Hartford and Greater Hartford County since 1960.">
+  <meta name="theme-color" content="#1B4332">
+  <title>Home Electrical Safety Checklist — Venora Electric Inc</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .checklist-page-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .risk-explainer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+    .risk-card {
+      border-radius: 2px;
+      padding: 1.25rem 1.5rem;
+      border: 1px solid;
+    }
+    .risk-card--green  { background: #ECFDF5; border-color: #6EE7B7; }
+    .risk-card--yellow { background: #FFFBEB; border-color: #FCD34D; }
+    .risk-card--red    { background: #FEF2F2; border-color: #FCA5A5; }
+    .risk-card__range  {
+      font-family: var(--font-display); font-size: 1.25rem; font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+    .risk-card--green  .risk-card__range { color: #065F46; }
+    .risk-card--yellow .risk-card__range { color: #92400E; }
+    .risk-card--red    .risk-card__range { color: #991B1B; }
+    .risk-card p { font-size: 0.8125rem; line-height: 1.55; margin: 0; }
+    .risk-card--green  p { color: #065F46; }
+    .risk-card--yellow p { color: #78350F; }
+    .risk-card--red    p { color: #7F1D1D; }
+    @media (max-width: 600px) {
+      .risk-explainer { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="emergency-banner" role="note">
+    24/7 Emergency Service Available &mdash; <a href="tel:8602428081">(860) 242-8081</a>
+  </div>
+
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <div class="container">
+        <div class="nav__inner">
+          <a href="index.html" class="nav__logo" aria-label="Venora Electric Inc — go to homepage">
+            <span class="nav__logo-name">Venora Electric</span>
+            <span class="nav__logo-tagline">Est. 1960 &middot; Bloomfield, CT</span>
+          </a>
+          <ul class="nav__links" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="checklist.html">Safety Check</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <a href="tel:8602428081" class="nav__phone" aria-label="Call us at (860) 242-8081">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9a16 16 0 0 0 6.29 6.29l1.36-1.36a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            (860) 242-8081
+          </a>
+          <button class="nav__hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="nav__mobile" aria-hidden="true">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="checklist.html">Safety Check</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="tel:8602428081" class="nav__mobile-phone">&phone; (860) 242-8081</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ====== PAGE HERO ====== -->
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="container page-hero__inner">
+        <span class="section-label">Free Self-Assessment</span>
+        <h1 id="page-heading">Home Electrical Safety Checklist</h1>
+        <p>Ten yes/no questions. Two minutes. Find out whether your home&rsquo;s electrical system needs attention &mdash; before a problem finds you.</p>
+      </div>
+    </section>
+
+    <!-- ====== CHECKLIST ====== -->
+    <section class="section checklist-section" aria-labelledby="checklist-tool-heading">
+      <div class="container">
+        <div class="checklist-page-wrap">
+
+          <!-- Score guide -->
+          <div style="margin-bottom: 2.5rem;">
+            <h2 id="checklist-tool-heading" style="font-size:1.375rem; margin-bottom:0.75rem;">How It Works</h2>
+            <p style="color:var(--text-muted); font-size:0.9375rem; margin-bottom:1.5rem; max-width:none;">
+              Each &ldquo;Yes&rdquo; answer represents a known electrical risk factor. Answer all 10 and we&rsquo;ll score your home and tell you what to do next.
+            </p>
+            <div class="risk-explainer" aria-label="Score guide">
+              <div class="risk-card risk-card--green">
+                <div class="risk-card__range">0 &ndash; 2 Yes</div>
+                <p>Your home looks good. A routine inspection is still a smart move every few years.</p>
+              </div>
+              <div class="risk-card risk-card--yellow">
+                <div class="risk-card__range">3 &ndash; 5 Yes</div>
+                <p>Some items need attention. Schedule a safety inspection soon.</p>
+              </div>
+              <div class="risk-card risk-card--red">
+                <div class="risk-card__range">6 &ndash; 10 Yes</div>
+                <p>Potential safety concerns. Call us today &mdash; don&rsquo;t wait.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Widget -->
+          <div class="checklist-widget" role="region" aria-labelledby="checklist-tool-heading">
+            <div class="checklist-header">
+              <h3>Is Your Home&rsquo;s Electrical System Safe?</h3>
+              <p>Answer honestly. &ldquo;Yes&rdquo; answers indicate potential risk factors.</p>
+            </div>
+
+            <div class="checklist-progress" aria-live="polite" aria-atomic="true">
+              <span class="checklist-progress__label">0 of 10 answered</span>
+              <div class="checklist-progress__bar" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0">
+                <div class="checklist-progress__fill"></div>
+              </div>
+            </div>
+
+            <div role="list">
+
+              <div class="checklist-question" role="listitem">
+                <span class="checklist-question__num" aria-hidden="true">1</span>
+                <span class="checklist-question__text" id="q1">My home was built before 1980.</span>
+                <div class="checklist-question__btns" role="group" aria-labelledby="q1">
+                  <button class="checklist-btn yes" aria-pressed="false">YES</button>
+                  <button class="checklist-btn no"  aria-pressed="false">NO</button>
+                </div>
+                <span class="checklist-question__status" aria-live="polite"></span>
+              </div>
+
+              <div class="checklist-question" role="listitem">
+                <span class="checklist-question__num" aria-hidden="true">2</span>
+                <span class="checklist-question__text" id="q2">I have a fuse box, not a circuit breaker panel.</span>
+                <div class="checklist-question__btns" role="group" aria-labelledby="q2">
+                  <button class="checklist-btn yes" aria-pressed="false">YES</button>
+                  <button class="checklist-btn no"  aria-pressed="false">NO</button>
+                </div>
+                <span class="checklist-question__status" aria-live="polite"></span>
+              </div>
+
+              <div class="checklist-question" role="listitem">
+                <span class="checklist-question__num" aria-hidden="true">3</span>
+                <span class="checklist-question__text" id="q3">I use extension cords as permanent wiring in some rooms.</span>
+                <div class="checklist-question__btns" role="group" aria-labelledby="q3">
+                  <button class="checklist-btn yes" aria-pressed="false">YES</button>
+                  <button class="checklist-btn no"  aria-pressed="false">NO</button>
+                </div>
+                <span class="checklist-question__status" aria-live="polite"></span>
+              </div>
+
+              <div class="checklist-question" role="listitem">
+                <span class="checklist-question__num" aria-hidden="true">4</span>
+                <span class="checklist-question__text" id="q4">Outlets near my sinks or bathrooms do not have GFCI protection.</span>
+                <div class="checklist-question__btns" role="group" aria-labelledby="q4">
+                  <button class="checklist-btn yes" aria-pressed="false">YES</button>
+                  <button class="checklist-btn no"  aria-pressed="false">NO</button>
+                </div>
+                <span class="checklist-question__status" aria-live="polite"></span>
+              </div>
+
+              <div class="checklist-question" role="listitem">
+                <span class="checklist-question__num" aria-hidden="true">5</span>
+                <span class="checklist-question__text" id="q5">My circuits trip or blow fuses more than once a month.</span>
+                <div class="checklist-question__btns" role="group" aria-labelledby="q5">
+                  <button class="checklist-btn yes" aria-pressed="false">YES</button>
+                  <button class="checklist-btn no"  aria-pressed="false">NO</button>
+                </div>
+                <span class="checklist-question__status" aria-live="polite"></span>
+              </div>
+
+              <div class="checklist-question" role="listitem">
+                <span class="checklist-question__num" aria-hidden="true">6</span>
+                <span class="checklist-question__text" id="q6">I have two-prong (ungrounded) outlets in my home.</span>
+                <div class="checklist-question__btns" role="group" aria-labelledby="q6">
+                  <button class="checklist-btn yes" aria-pressed="false">YES</button>
+                  <button class="checklist-btn no"  aria-pressed="false">NO</button>
+                </div>
+                <span class="checklist-question__status" aria-live="polite"></span>
+              </div>
+
+              <div class="checklist-question" role="listitem">
+                <span class="checklist-question__num" aria-hidden="true">7</span>
+                <span class="checklist-question__text" id="q7">My lights flicker or dim regularly.</span>
+                <div class="checklist-question__btns" role="group" aria-labelledby="q7">
+                  <button class="checklist-btn yes" aria-pressed="false">YES</button>
+                  <button class="checklist-btn no"  aria-pressed="false">NO</button>
+                </div>
+                <span class="checklist-question__status" aria-live="polite"></span>
+              </div>
+
+              <div class="checklist-question" role="listitem">
+                <span class="checklist-question__num" aria-hidden="true">8</span>
+                <span class="checklist-question__text" id="q8">I&rsquo;ve noticed outlets or switches that feel warm to the touch.</span>
+                <div class="checklist-question__btns" role="group" aria-labelledby="q8">
+                  <button class="checklist-btn yes" aria-pressed="false">YES</button>
+                  <button class="checklist-btn no"  aria-pressed="false">NO</button>
+                </div>
+                <span class="checklist-question__status" aria-live="polite"></span>
+              </div>
+
+              <div class="checklist-question" role="listitem">
+                <span class="checklist-question__num" aria-hidden="true">9</span>
+                <span class="checklist-question__text" id="q9">I don&rsquo;t have interconnected smoke detectors on every floor.</span>
+                <div class="checklist-question__btns" role="group" aria-labelledby="q9">
+                  <button class="checklist-btn yes" aria-pressed="false">YES</button>
+                  <button class="checklist-btn no"  aria-pressed="false">NO</button>
+                </div>
+                <span class="checklist-question__status" aria-live="polite"></span>
+              </div>
+
+              <div class="checklist-question" role="listitem">
+                <span class="checklist-question__num" aria-hidden="true">10</span>
+                <span class="checklist-question__text" id="q10">My home has never had a professional electrical inspection.</span>
+                <div class="checklist-question__btns" role="group" aria-labelledby="q10">
+                  <button class="checklist-btn yes" aria-pressed="false">YES</button>
+                  <button class="checklist-btn no"  aria-pressed="false">NO</button>
+                </div>
+                <span class="checklist-question__status" aria-live="polite"></span>
+              </div>
+
+            </div><!-- /list -->
+
+            <div class="checklist-result" aria-live="polite" aria-atomic="true" role="status">
+              <div class="checklist-result__score"></div>
+              <div class="checklist-result__label"></div>
+              <p class="checklist-result__text"></p>
+              <div class="checklist-result__actions">
+                <a href="contact.html" class="btn btn--primary">Schedule an Inspection</a>
+                <a href="tel:8602428081" class="btn btn--brass js-call-btn" style="display:none;">Call Now: (860) 242-8081</a>
+                <button class="btn btn--outline js-retake">Retake Checklist</button>
+              </div>
+            </div>
+
+          </div><!-- /checklist-widget -->
+
+          <!-- Educational note -->
+          <aside style="margin-top:2.5rem; padding:1.5rem 1.75rem; background:rgba(27,67,50,0.04); border:1px solid rgba(27,67,50,0.12); border-left:4px solid var(--green-deep); border-radius:2px;" aria-label="About this checklist">
+            <h4 style="font-size:0.9375rem; margin-bottom:0.5rem;">About This Checklist</h4>
+            <p style="font-size:0.875rem; color:var(--text-muted); line-height:1.65; max-width:none;">
+              This tool is intended for general educational purposes and is not a substitute for a professional electrical inspection. Risk factors identified here are common indicators of potential hazards, but only a licensed electrician can properly evaluate your home&rsquo;s electrical system. Venora Electric Inc holds Connecticut Electrical Unlimited Contractor License ELC.0125773-E1.
+            </p>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CTA ====== -->
+    <section class="cta-section" aria-labelledby="checklist-cta">
+      <div class="container">
+        <div class="cta-section__inner">
+          <span class="section-label" style="color:var(--brass-light);">Next Step</span>
+          <h2 id="checklist-cta" style="color:var(--white);">Talk to a Licensed Electrician</h2>
+          <p>Whether your score came back clean or flagged concerns, a professional inspection is the only way to know for certain. We&rsquo;ve been doing this since 1960.</p>
+          <div class="cta-section__btns">
+            <a href="contact.html" class="btn btn--brass btn--lg">Schedule an Inspection</a>
+            <a href="tel:8602428081" class="btn btn--outline-light">Call (860) 242-8081</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Venora Electric</div>
+          <div class="footer__brand-est">Est. 1960 &middot; Bloomfield, CT</div>
+          <p class="footer__brand-desc">Three generations of trusted electrical service across Greater Hartford County. Licensed, insured, and proud to call Connecticut home.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigation</div>
+          <ul class="footer__links" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="checklist.html">Safety Check</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Services</div>
+          <ul class="footer__links" role="list">
+            <li><a href="services.html">Residential</a></li>
+            <li><a href="services.html">Commercial</a></li>
+            <li><a href="services.html">Panel Upgrades</a></li>
+            <li><a href="services.html">Safety Inspections</a></li>
+            <li><a href="services.html">EV Chargers</a></li>
+            <li><a href="services.html">Emergency Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Contact</div>
+          <div class="footer__contact-row">
+            <div class="footer__contact-label">Phone</div>
+            <a href="tel:8602428081">(860) 242-8081</a>
+          </div>
+          <div class="footer__contact-row">
+            <div class="footer__contact-label">Fax</div>
+            <p>(860) 242-6194</p>
+          </div>
+          <div class="footer__contact-row">
+            <div class="footer__contact-label">Email</div>
+            <a href="mailto:tvenora@comcast.net">tvenora@comcast.net</a>
+          </div>
+          <div class="footer__contact-row">
+            <div class="footer__contact-label">Address</div>
+            <p>71 W Dudley Town Rd<br>Bloomfield, CT 06002</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2025 Venora Electric Inc. All rights reserved.</span>
+        <span class="footer__license-badge">CT Electrical Unlimited Contractor License ELC.0125773-E1</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
